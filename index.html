@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Get the Location's Weather</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@700;800;900&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+  <div class="app-wrap text-center">
+    <h1 class="display-3 text-danger">Get the Location's Weather</h1>
+    
+      <header>
+        <form id="inputForm">        
+          <div class="input-group">
+            <input type="text" class="form-control inputCity search-box" autocomplete="off" placeholder="Search for a city...">
+            <div class="input-group-append">
+              <input type="submit" class="input-group-text btn btn-block btn-danger" value="Search" />
+            </div>
+          </div>
+        </form>
+      </header>
+      <main class="weatherReport">
+        <section class="location">
+          <div class="cityName"></div>
+          <div class="date todayDt"></div>
+        </section>
+        <div class="current">
+          <div class="temp"></div>          
+          <div class="hi-low">Lat: <span class="lon"></span> Lon: <span class="lat"></span></div>
+          <div class="weather"></div>
+          <div><img src="" id="weatherIcon"></div>          
+          <div class="hi-low">Min: <span class="minTemp"></span> Max: <span class="maxTemp"></span></div>
+        </div>
+      </main>
+   </div>  
+  <script src="script.js"></script>
+</body>
+</html>
